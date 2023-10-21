@@ -33,3 +33,37 @@ const content = {
 }
 
 
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+
+    var screenHeight = window.innerHeight;
+    
+
+    var tittel = document.getElementById('title');
+    var intro = document.getElementById('intro');
+    var opprinnelse = document.getElementById('origin');
+    var samfunn = document.getElementById('societal');
+    var hope = document.getElementById('hope');
+    var norge = document.getElementById('noorway');
+    var avsluttning = document.getElementById('summary');
+    var footer = document.getElementById('footer');
+
+    var hero = document.getElementById('hero');
+    var style = hero.style;
+
+    style.height = screenHeight;
+
+    tittel.innerHTML = content.tittel;
+    intro.innerHTML = content.intro;
+    opprinnelse.innerHTML = content.opprinnelse;
+    samfunn.innerHTML = content.sammfunsEffekt;
+    hope.innerHTML = content.håp;
+    norge.innerHTML = content.norge;
+    avsluttning.innerHTML = content.konklusjon;
+
+
+
+
+});
