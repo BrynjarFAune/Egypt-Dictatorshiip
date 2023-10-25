@@ -1,3 +1,11 @@
+:root {
+    --darker-blue: #0367A6;
+    --bright-blue: #048ABF;
+    --main-sand: #F28627;
+    --darker-sand: #BF4904;
+    --reddish: #731702;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     font-family: 'Voces', sans-serif;
@@ -9,20 +17,37 @@
 
 h1 {
     font-size: 150px;
-    color: #40E0D0;
+    color: var(--darker-blue);
+    -webkit-text-stroke: var(--main-sand) 2px;
 }
 
-[class$="wrapper"] {
+[class$="wrapper1"] {
     z-index: 100;
     padding: 30px;
-    border: 1px solid black;
     margin: 40px 50px;
     justify-content: space-evenly;
+    flex-direction: row;
+    background-color: var(--main-sand);
+}
+
+[class$="wrapper2"] {
+    z-index: 100;
+    padding: 30px;
+    margin: 40px 50px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: var(--darker-sand);
+}
+
+[class$="image"] > img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 0;
 }
 
 .content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #F5DEB3;
 }
@@ -38,7 +63,7 @@ p {
     width: 100%;
     height: 100vh;
     margin-top: 0;
-    background-image: url(https://hips.hearstapps.com/hmg-prod/images/horse-replace-002-64945a222f108.jpg);
+    background-image: url(./static/camel.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
