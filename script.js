@@ -1,6 +1,6 @@
 
 const content = {
-    tittel: "Diktaturen i Egypt: En Mørk Fortelling om Undertrykkelse og Maktmisbruk",
+    tittel: "Diktaturet i Egypt: En Mørk Fortelling om Undertrykkelse og Maktmisbruk",
 
     intro: "Diktaturet i Egypt er en historie som har satt dype spor i landets historie og samfunn. I flere tiår var Egypt underlagt et regime preget av undertrykkelse, maktmisbruk og begrensning av individuelle friheter. Denne teksten vil utforske diktaturets opprinnelse, dets virkninger på det egyptiske samfunnet og det håpet som ligger i befolkningens kamp for frihet og demokrati.",
     
@@ -59,6 +59,15 @@ document.addEventListener('DOMContentLoaded', function () {
     hope.innerHTML = content.håp;
     norge.innerHTML = content.norge;
     avsluttning.innerHTML = content.konklusjon;
+
+    kilder = content.kilder;
+    for (let i = 0; i < kilder.length; i++) {
+        footer.innerHTML += `
+        <div class="source">
+            <h2>${kilder[i].title}</h2><p>${kilder[i].source}</p>
+        </div>
+        `;
+    }
 
 
 

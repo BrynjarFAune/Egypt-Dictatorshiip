@@ -21,22 +21,22 @@ h1 {
     -webkit-text-stroke: var(--main-sand) 2px;
 }
 
-[class$="wrapper1"] {
-    z-index: 100;
-    padding: 30px;
-    margin: 40px 50px;
-    justify-content: space-evenly;
-    flex-direction: row;
-    background-color: var(--main-sand);
-}
-
 [class$="wrapper2"] {
     z-index: 100;
     padding: 30px;
-    margin: 40px 50px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: var(--main-sand);
+    width: 100%;
+}
+
+[class$="wrapper1"] {
+    z-index: 100;
+    padding: 30px;
     justify-content: space-evenly;
     flex-direction: row;
     background-color: var(--darker-sand);
+    width: 100%;
 }
 
 [class$="image"] > img {
@@ -66,4 +66,23 @@ p {
     background-image: url(./static/camel.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+h2 {
+    color: #000;
+}
+
+.source {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    border: 0.5px solid black;
+    background-color: #731702;
+    width: 100%;
+    margin: 0;
+}
+
+.footer {
+    background-color: var(--darker-sand);
+    border: 0.5px solid black;
 }
