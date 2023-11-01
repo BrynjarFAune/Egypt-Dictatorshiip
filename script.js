@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let i = 0; i < kilder.length; i++) {
         footer.innerHTML += `
         <div class="source">
-            <h2>${kilder[i].title}</h2><p>${kilder[i].source}</p>
+            <h2 style="color: white;">${kilder[i].title}</h2><a>${kilder[i].source}</a>
         </div>
         `;
     }
