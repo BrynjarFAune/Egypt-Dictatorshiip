@@ -86,3 +86,7 @@ h2 {
     background-color: var(--darker-sand);
     border: 0.5px solid black;
 }
+
+head, script {
+    display: none;
+}
